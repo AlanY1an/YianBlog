@@ -1,4 +1,4 @@
-This is my personal blog.
+This is my personal blog: whyian.dev/about
 
 This blog utilizes Hexo to generate static pages that are then hosted on Vercel for optimal performance and reliability. The content updates and site configurations are managed through this GitHub repository.
 
