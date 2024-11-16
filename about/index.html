@@ -143,15 +143,37 @@
   <!-- 关于页 url形式：https://yoursite/about/ -->
     <div class="container about-index">
       <div class="markdown-body">
-        <div style="display: flex; justify-content: space-between; align-items: baseline; height: 60px">
+        <style>
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    height: 60px;
+}
+
+.project-header, .markdown-body h2 {
+    margin-top: 40px;
+    margin-bottom: 0;
+}
+
+/* Grid layout for projects */
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+</style>
+
+<div class="header-container">
     <h1>Yian</h1>
-    <span><a target="_blank" rel="noopener" href="https://drive.google.com/file/d/14LftfBA8mMMus0kH94e0GWj7iJvR9fMn/view?usp=sharing">Resume</a></span>
+    <span><a target="_blank" rel="noopener" href="https://drive.google.com/file/d/1qDslunW4PMKlwqI5iCc5oP2Eey2IZKQa/view">Resume</a></span>
 </div>
 <p>/jˈɪən/</p>
 
 <p>Hi, I’m Yian Ge, a recent graduate from the University of Texas at Austin with a Bachelor’s degree in Mathematics. I am currently pursuing a Master’s in Software Engineering Systems at Northeastern University, where I am honing my skills in software engineering, focusing on complex system design and advanced algorithmic solutions. I am seeking an internship as a Software Development Engineer, with a strong interest in full-stack development, to further develop my expertise and contribute to innovative projects.</p>
-<h2 style="margin-top:40px;margin-bottom:0px;"> Project </h2>
-<div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px;">
+<h2 class="project-header"> Project </h2>
+<div class="project-grid">
     <div>
         <h3><a target="_blank" rel="noopener" href="https://github.com/AlanY1an/Restaurant-Manage-System">Restaurant Website</a></h3>
         <p>Full-stack restaurant site with reservations and ordering.</p>
@@ -164,10 +186,11 @@
         <h3><a target="_blank" rel="noopener" href="https://github.com/AlanY1an/YianBlog/tree/main">whyian.dev</a></h3>
         <p>blog built with Hexo and hosted on Vercel with GitHub.</p>
     </div>
-    <!-- <div> -->
-        <!-- <h3><a target="_blank" rel="noopener" href="https://github.com/AlanY1an/Project4">Project 4</a></h3>
-        <p>Short description of project 4.</p>
+    <div>
+        <h3><a target="_blank" rel="noopener" href="https://github.com/AlanY1an/Flower-Shop-Frontend">Flower Shop Frontend</a></h3>
+        <p>An ongoing project to develop a modern and responsive frontend for a flower shop using React. </p>
     </div>
+    <!-- Uncomment if needed
     <div>
         <h3><a target="_blank" rel="noopener" href="https://github.com/AlanY1an/Project5">Project 5</a></h3>
         <p>Short description of project 5.</p>
@@ -175,7 +198,8 @@
     <div>
         <h3><a target="_blank" rel="noopener" href="https://github.com/AlanY1an/Project6">Project 6</a></h3>
         <p>Short description of project 6.</p>
-    </div> -->
+    </div>
+    -->
 </div>
 
 <hr>
